@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className = 'box'>
+        <h1>BookList Maintenance form</h1>
+        <p>Add and view your books using local storage</p>
+        
+        <div className='box1'>
+          <div className='container'>
+            <form className='forms' >
+              <h5>Title</h5>
+              <input type="text" className="input-box"  required></input>
+              <br />
+              <h5>Author</h5>
+              <input type="text" className="input-box"  required></input>
+              <br />
+              <h5>ISBN#</h5>
+              <input type="text" className="input-box"  required></input>
+              <br />
+              <button type="submit" className='btn ' >Add Books</button>
+
+            </form>
+          </div>
+         
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default App;
